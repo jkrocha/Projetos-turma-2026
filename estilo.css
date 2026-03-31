@@ -272,6 +272,7 @@ body{
 #container_clientes{
     margin-top: 200px;
 }
+
 /*subtitulo e texto*/
 #container_clientes .sub_text{
     text-align: center;
@@ -292,6 +293,8 @@ body{
 #container_clientes .img_comentario{
     position: relative;
     width: 300px;
+    height: 380px;
+    display: flex;
 }
 
 #container_clientes .img_comentario img{
@@ -301,21 +304,30 @@ body{
 }
 
 #container_clientes .header{
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    width: 280px;
+    height: 50px;
     position: absolute;
-    background-color: #101241;
+    display: flex;
+    gap: 3rem;
+    padding: 10px;
+    justify-content: center;
 }
 
 #container_clientes .perfil{
-    width: 20px;
-    height: 20px;
     border-radius: 99px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
 }
 
 #container_clientes .perfil img{
-    width: 100%;
-    height: 100%;
+    width: 40px;
+    height: 40px;
     object-fit: cover;
+    border-radius: 99px;
 }
 
 #container_clientes .estrelas{
@@ -324,4 +336,10 @@ body{
 
 #container_clientes .estrelas img{
     width: 20px;
+    object-fit: contain;
+}
+
+#container_clientes .comentario{
+    background-color: #101241;
+
 }
