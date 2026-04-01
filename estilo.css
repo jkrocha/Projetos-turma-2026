@@ -1,9 +1,15 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonte: "Noto Sans", sans-serif;
+}
 
 *{
     margin: 0px;
     padding: 0px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:var(--fonte);
+    box-sizing: border-box;
 }
 
 body{
@@ -120,7 +126,6 @@ body{
 }
 
 .container_vagas .bt_medio, .bt_medio button{
-    width: 200px;
     cursor: pointer;
 }
 
@@ -132,7 +137,9 @@ body{
     font-size: 16px;
     font-weight: 600;
     transition: 0.5s;
+    width: 200px;
 }
+
 
 .container_vagas .bt_medio button:hover{
     background-color: transparent;
@@ -280,13 +287,28 @@ body{
 
 #container_clientes .sub_text h3{
     font-size: 26px;
+    margin-bottom: 18px;
+}
+/*container cards*/
+#container_clientes .container_cards{
+    margin-top: 50px;
+}
+/*Grid cards*/
+#container_clientes .grid_topo{
+    display: flex;
+    gap: 2rem;
+    margin-left: -550px;
+}
+
+#container_clientes .grid_baixo{
+    display: flex;
+    gap: 2rem;
+    margin-top: 60px;
+    margin-left: 300px;
 }
 /*card unico*/
 #container_clientes .card_cliente{
     display: flex;
-}
-#container_clientes .img_info{
-    
 }
 
 #container_clientes .img_comentario{
@@ -344,10 +366,10 @@ body{
 }
 
 #container_clientes .comentario{
-    border: 3px solid #CDCDCD;
+    border: 3px solid #dddddd;
     width: 260px;
     margin-left: 16px;
-    padding: 18px;
+    padding: 26px 18px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -360,4 +382,125 @@ body{
 
 #container_clientes .comentario span p{
     color: #7A7A7A;
+}
+
+#container_clientes .topo_comentario h4{
+    font-size: 20px
+}
+/*Seção entrar em contato*/
+#container_contato{
+    background-color: #EBE6D2;
+    margin: 0 auto;
+    padding: 60px 0px;
+}
+
+#container_contato .sub h3{
+    text-align: center;
+    font-size: 22px;
+}
+/*Bloco meios de contatos*/
+#container_contato .bloco_contatos{
+    margin: 0 auto;
+    background-color: #F9F9F9;
+    border: 1px solid #D6D6D6;
+    width: 800px;   
+    padding: 30px;
+}
+
+#container_contato .bloco_contatos h4{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2C2C2C;
+    font-size: 18px;
+    
+}
+/*Bloco meios de contatos*/
+#container_contato .container_whastapp{
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 1px 4px 12px rgb(219, 219, 219);
+}
+
+#container_contato .container_whastapp .left{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+#container_contato .container_whastapp .left i{
+    font-size: 30px;
+    color: #337438;
+}
+
+#container_contato .container_whastapp .left p{
+    color: #337438;
+    font-weight: 600;
+}
+
+#container_contato .right .bt_medio button{
+    cursor: pointer;
+}
+
+#container_contato .bt_medio button{
+    background-color: #101241;
+    border: 1px solid #101241;
+    color: white;
+    padding: 10px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.5s;
+    width: 200px;
+}
+
+#container_contato .bt_medio button:hover{
+    background-color: transparent;
+    border: 1px solid #101241;
+    color: #101241;
+}
+
+/*Divisor ou*/
+#container_contato .divisor{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#container_contato .divisor p{
+    margin: 0px 20px;
+    color: #999999;
+    font-weight: 500;
+}
+
+#container_contato .linha_left, .linha_right{
+    border-bottom: 1px solid #CECECE;
+    width: 48%;
+}
+
+
+
+
+
+
+#container_contato .container_input .bt_grande button{
+    cursor: pointer;
+}
+
+#container_contato .container_input .bt_grande button{
+    background-color: #101241;
+    border: 1px solid #101241;
+    color: white;
+    padding: 10px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.5s;
+    width: 200px;
+}
+
+#container_contato .container_input .bt_grande button:hover{
+    background-color: transparent;
+    border: 1px solid #101241;
+    color: #101241;
 }
