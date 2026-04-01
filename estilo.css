@@ -284,7 +284,6 @@ body{
 /*card unico*/
 #container_clientes .card_cliente{
     display: flex;
-    width: 200px;
 }
 #container_clientes .img_info{
     
@@ -330,16 +329,35 @@ body{
     border-radius: 99px;
 }
 
-#container_clientes .estrelas{
-    display: flex;
+#container_clientes .perfil p{
+    font-weight: 500;
 }
 
-#container_clientes .estrelas img{
-    width: 20px;
-    object-fit: contain;
+#container_clientes .estrelas{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#container_clientes .estrelas i{
+    color: #F3E680;
 }
 
 #container_clientes .comentario{
-    background-color: #101241;
+    border: 3px solid #CDCDCD;
+    width: 260px;
+    margin-left: 16px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+#container_clientes .comentario p{
+    color: #333333;
+    margin-top: 20px;
+}
+
+#container_clientes .comentario span p{
+    color: #7A7A7A;
 }
