@@ -1,8 +1,10 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
+/*Configurações gerais*/
 :root{
     --fonte: "Noto Sans", sans-serif;
+    --corHs: #2C2C2C;
+    --corPar: #333333;
 }
 
 *{
@@ -18,6 +20,14 @@ body{
     margin: 0 auto;
 }
 
+h1, h2, h3, h4{
+    color: var(--corHs);
+}
+
+p{
+    color: var(--corPar);
+}
+/*Configuração landing page*/
 #container_hero{
     display: flex;
     justify-content: space-between;
@@ -119,10 +129,12 @@ body{
 
 .container_vagas h4{
     font-size: 20px;
+    color: var(--corHs);
 }
 
 .container_vagas p{
     margin: 12px 0px 18px 0pc;
+    color: var(--corPar);
 }
 
 .container_vagas .bt_medio, .bt_medio button{
@@ -180,6 +192,7 @@ body{
 
 .container_sobre .left_textos p{
     margin-top: 10px;
+    color: var(--corPar);
 }
 
 .container_sobre .right_imgs{
@@ -197,7 +210,6 @@ body{
 .container_sobre{
     background-image: url(img/pack_002/background\ 2.jpg);
     background-position: center center;
-
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -353,6 +365,7 @@ body{
 
 #container_clientes .perfil p{
     font-weight: 500;
+    color: white;
 }
 
 #container_clientes .estrelas{
@@ -390,21 +403,22 @@ body{
 /*Seção entrar em contato*/
 #container_contato{
     background-color: #EBE6D2;
-    margin: 0 auto;
-    padding: 60px 0px;
+    margin-top: 100px;
+    padding: 40px 0px;
 }
 
 #container_contato .sub h3{
     text-align: center;
     font-size: 22px;
+    margin-bottom: 36px;
 }
 /*Bloco meios de contatos*/
 #container_contato .bloco_contatos{
     margin: 0 auto;
     background-color: #F9F9F9;
     border: 1px solid #D6D6D6;
-    width: 800px;   
-    padding: 30px;
+    width: 700px;   
+    padding: 40px 0px;
 }
 
 #container_contato .bloco_contatos h4{
@@ -412,7 +426,6 @@ body{
     margin-bottom: 20px;
     color: #2C2C2C;
     font-size: 18px;
-    
 }
 /*Bloco meios de contatos*/
 #container_contato .container_whastapp{
@@ -422,6 +435,8 @@ body{
     justify-content: space-between;
     padding: 10px 20px;
     box-shadow: 1px 4px 12px rgb(219, 219, 219);
+    width: 600px;
+    margin: 0 auto;
 }
 
 #container_contato .container_whastapp .left{
@@ -432,16 +447,12 @@ body{
 
 #container_contato .container_whastapp .left i{
     font-size: 30px;
-    color: #337438;
+    color: #1FAF38;
 }
 
 #container_contato .container_whastapp .left p{
     color: #337438;
     font-weight: 600;
-}
-
-#container_contato .right .bt_medio button{
-    cursor: pointer;
 }
 
 #container_contato .bt_medio button{
@@ -453,6 +464,7 @@ body{
     font-weight: 600;
     transition: 0.5s;
     width: 200px;
+    cursor: pointer;
 }
 
 #container_contato .bt_medio button:hover{
@@ -466,29 +478,54 @@ body{
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
 }
 
 #container_contato .divisor p{
     margin: 0px 20px;
     color: #999999;
     font-weight: 500;
+    text-align: center;
 }
 
 #container_contato .linha_left, .linha_right{
     border-bottom: 1px solid #CECECE;
-    width: 48%;
+    width: 36%;
+}
+/*Campo para preencher*/
+#container_contato .container_input{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 0 auto;
+    gap: 1.3rem;
 }
 
+#container_contato .container_input .input{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 
+#container_contato .container_input .input label{
+    margin-left: 10px;
+    font-weight: 500;
+    color: #333333;
+}
 
+#container_contato .container_input .input input, textarea{
+    padding: 10px;
+    border: 1px solid #B2B2B2;
+    border-radius: 4px;
+}
 
-
+#container_contato .container_input textarea{
+    height: 200px;
+}
 
 #container_contato .container_input .bt_grande button{
     cursor: pointer;
-}
-
-#container_contato .container_input .bt_grande button{
     background-color: #101241;
     border: 1px solid #101241;
     color: white;
@@ -496,11 +533,52 @@ body{
     font-size: 16px;
     font-weight: 600;
     transition: 0.5s;
-    width: 200px;
+    width: 600px;
+    margin: 0 auto;
 }
 
 #container_contato .container_input .bt_grande button:hover{
     background-color: transparent;
     border: 1px solid #101241;
     color: #101241;
+}
+/*Rodape*/
+#rodape{
+    height: 300px;
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+#rodape .redes_sociais{
+    display: flex;
+    gap: 1rem;
+    font-size: 26px;
+    margin: 0 auto;
+}
+
+#rodape .facebook{
+    color: #1877F2;
+}
+
+#rodape .instagram i{
+    color: #FF007A;
+}
+#rodape .pinterest i{
+    color: #CB1F27;
+}
+
+#rodape .localizacao{
+    margin: 0 auto;
+}
+
+#rodape .localizacao a, p{
+    color: white;
+    text-decoration-color: white;
+}
+
+#rodape .localizacao p{
+    text-align: center;
 }
