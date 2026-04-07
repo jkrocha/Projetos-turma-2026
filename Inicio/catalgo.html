@@ -28,18 +28,50 @@
         <div class="container_aviso">
             <span class="aviso_destaque"><p>3 vagas disponíveis</p></span> <p>Garanta sua reserva agora antes que acabe</p>
         </div>
-        <div class="container_topo">
+        <div class="container_topo"> <!--Subtitulo, pesquisa, carrinho e favorito-->
+            <div class="titulo_pag">
+                <h2>Catalogo</h2>
+            </div>
             <div class="search">
                 <input type="search" name="pesquisar" id="idPesquisar" placeholder="Pesquisar"> <span><i class="fa-brands fa-sistrix"></i></span>
             </div>
             <div class="right_side">
-                <span class="carrinho"><i class="fa-solid fa-cart-shopping"></i> <p>Carrinho</p></span>
-                <span class="favorito"><i class="fa-regular fa-heart"></i> <p>Favorito</p></span>
+                <a href="#" class="carrinho"</a><i class="fa-solid fa-cart-shopping"></i> <span class="etiqueta"><p>Carrinho</p></span></a>
+                <a href="#" class="favorito"><i class="fa-regular fa-heart" style="background-color: #721B1F;"></i><span class="etiqueta"><p style="color: #721B1F;">Favorito</p></span></a>
             </div>
-        </div>
-        <div class="">
-
-        </div>
+        </div><!--Botões para troca de itens-->
+        <div id="container_btCatalogo">
+            <div id="btCroches" class="btNav">
+                <img src="../img/icones/wool.png" alt="">
+                <p>Crochês</p>
+            </div>
+            <div id="btBordados" class="btNav">
+                <img src="../img/icones/bordados.png" alt="">
+                <p>Bordados</p>
+            </div>
+            <div id="btRoupas" class="btNav">
+                <img src="../img/icones/dress.png" alt="">
+                <p>Roupas</p>
+            </div>
+            <div id="btAcessorios" class="btNav">
+                <img src="../img/icones/scarf.png" alt="">
+                <p>Acessórios</p>
+            </div>
+        </div><!--Fim Botões para troca de itens-->
+        <div id="container_catModelos"><!--Seção Catalogo-->
+            <div class="top_grid"><!--Modelos da linha de cima-->
+                <div class="container_card">
+                    <div class="img_card"><img src="..." alt=""></div>
+                    <div class="info">
+                        <span class="nome_preco">
+                            <p>Sueter Feminino</p>
+                            <p>R$ 23,99</p>
+                        </span>
+                        <span class="bt_favorito"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div><!--Fim Seção Catalogo-->
     </main>
 </body>
 </html>
