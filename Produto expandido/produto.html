@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produto</title>
     <script src="https://kit.fontawesome.com/988dc92aba.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    
     <link rel="stylesheet" href="./produto_estilo.css">
 </head>
 <body>
@@ -58,32 +63,45 @@
                 </div>
             </div><!--Fim fotos-->
             <div class="right-side">
-                <div class="info_prodtuo">
-                    <h4>Suéter Feminino</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <div class="info_produto">
+                    <h4 style="font-size: 28px;">Suéter Feminino</h4>
+                    <p>Lorem ipsum dolor sit, amet <br> consectetur adipisicing elit.</p>
                 </div>
+                <hr>
                 <div class="cor_produto">
                     <label for="iCor">Cor:</label>
                     <div class="bt_cascata"><!--botao em cascata-->
-                        <span class="img_cores"><img src="" alt=""></span>
-                        <span class="label_cores">Verde e bege</span>
-                        <span class="seta_baixo"><i class="fa-solid fa-arrow-down"></i></span>
+                        <span class="left">
+                            <span class="img_cores"><img src="../img/icones/Group 29.svg" alt=""></span>
+                            <span class="label_cores" style="font-weight: 600; color: #333333; font-size: 17px; ">Verde e bege</span>
+                        </span>
+                        <span class="seta_baixo" style="color: #464646;"><i class="fa-solid fa-arrow-down"></i></span>
                     </div><!--Fim botao em cascata-->
                 </div>
                 <div class="tamanho_produto">
                     <label for="iSize">Tamanho:</label>
-                    <span id="pp_size" class="medidas"><a href="#"><button>PP</button></a></span>
-                    <span id="p_size" class="medidas"><a href="#"><button>P</button></a></span>
-                    <span id="m_size" class="medidas"><a href="#"><button>M</button></a></span>
-                    <span id="g_size" class="medidas"><a href="#"><button>G</button></a></span>
-                    <span id="gg_size" class="medidas"><a href="#"><button>GG</button></a></span>
+                    <div class="container_medida">
+                        <span id="pp_size" class="medidas"><a href="#"><button>PP</button></a></span>
+                        <span id="p_size" class="medidas"><a href="#"><button>P</button></a></span>
+                        <span id="m_size" class="medidas"><a href="#"><button>M</button></a></span>
+                        <span id="g_size" class="medidas"><a href="#"><button>G</button></a></span>
+                        <span id="gg_size" class="medidas"><a href="#"><button>GG</button></a></span>
+                    </div>
                 </div>
                 <div class="guia_medida">
                     <p>Saiba mais sobre as medidas</p> <span class="seta_direita"><i class="fa-solid fa-arrow-right"></i></span>
                 </div>
-            </div>
-        </div>
 
+                <div class="container_bt">
+                    <div class="bt_comprar">
+                        <a href="#" class="bt_medio"><button>Comprar</button></a>
+                    </div>
+                    <div class="bt_carrinho">
+                        <a href="#" class="bt_medio"><button>Comprar</button></a>
+                    </div>
+                </div><!--Fim container_bt-->
+            </div><!--Fim right-side-->
+        </div><!--Fim container_produto-->
     </main>
 </body>
 </html>

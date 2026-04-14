@@ -239,12 +239,76 @@ p{
     border-radius: 99px;
     padding: 12px 16px;
     cursor: pointer;
+} 
+
+#container_produto .right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#container_produto .right-side label{
+    font-weight: 700;
+}
+
+#container_produto .right-side .info_produto{
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+}
+
+#container_produto .right-side .cor_produto{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+#container_produto .right-side .cor_produto .left{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#container_produto .right-side .cor_produto .left .img_cores{
+    width: 30px;
+    height: 30px;
+}
+
+#container_produto .right-side .cor_produto .left .img_cores img{
+    object-fit: cover;
+    width: 100%;
+}
+
+#container_produto .right-side .cor_produto .bt_cascata{
+    display: flex;
+    background-color: #101241;
+    width: 380px;
+    padding: 10px 20px;
+    border: 1px solid #CCCCCC;
+    background-color: #FBFBFB;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
-#container_produto .right-side
+#container_produto .right-side .tamanho_produto{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+}
+
+#container_produto .right-side .tamanho_produto .container_medida .medidas button{
+    border: none;
+    padding: 0px;
+}
+
+#container_produto .right-side .tamanho_produto .container_medida .medidas a{
+    border: 1px solid var(--corPar);
+    padding: 20px;
+
+}
 
 
 
-
-
+ 
