@@ -184,6 +184,7 @@ p{
 #container_produto{
     display: flex;
     gap: 2rem;
+    margin-top: 88px;
 }
 
 #container_produto .left_side{
@@ -257,6 +258,11 @@ p{
     flex-direction: column;
 }
 
+#container_produto hr{
+    border: none;
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
 #container_produto .right-side .cor_produto{
     display: flex;
     flex-direction: column;
@@ -290,25 +296,101 @@ p{
     align-items: center;
 }
 
-
 #container_produto .right-side .tamanho_produto{
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 1.2rem;
+}
 
+#container_produto .right-side .tamanho_produto .container_medida{
+    display: flex;
+    gap: 17px;
 }
 
 #container_produto .right-side .tamanho_produto .container_medida .medidas button{
-    border: none;
-    padding: 0px;
-}
-
-#container_produto .right-side .tamanho_produto .container_medida .medidas a{
-    border: 1px solid var(--corPar);
+    border: 1px solid rgb(190, 190, 190);
     padding: 20px;
-
+    font-size: 16px;
+    color: rgb(170, 170, 170);
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: transparent;
 }
 
+#container_produto .right-side .tamanho_produto .container_medida .medidas button:hover{
+    color: var(--corPar);
+    border-color: #333333;
+    transform: scale(1.06);
+}
 
+#container_produto .right-side .guia_medida{
+    display: flex;
+    background-color: rgb(235, 235, 235);
+    justify-content: space-between;
+    padding: 20px;
+}
 
- 
+#container_produto .right-side .guia_medida .left i{
+    color: #2A2A2A;
+}
+
+#container_produto .right-side .container_vagaDisponivel{
+    background-color: #f5eaeb;
+    border: 1px solid #e5cbcd;;
+    padding: 18px;
+    display: none;
+}
+
+#container_produto .right-side .container_vagaDisponivel span{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #721B1F;
+    margin-bottom: 10px;
+}
+
+#container_produto .right-side .container_vagaDisponivel span i{
+    font-size: 18px;
+}
+
+#container_produto .right-side .container_bt{
+    display: flex;
+    gap: 1rem;
+}
+
+#container_produto .right-side .container_bt .bt_comprar button{
+    background-color: #101241;
+    border: 1px solid #101241;
+    color: white;
+    padding: 10px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.5s;
+    width: 200px;
+    cursor: pointer;
+}
+
+#container_produto .right-side .container_bt .bt_carrinho button{
+    background-color: transparent;
+    border: 1px solid #101241;
+    color: #101241;
+    padding: 10px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.5s;
+    width: 200px;
+    cursor: pointer;
+}
+
+#container_produto .right-side .container_bt .bt_comprar button:hover{
+    background-color: transparent;
+    border: 1px solid #101241;
+    color: #101241;
+}
+
+#container_produto .right-side .container_bt .bt_carrinho button:hover{
+    background-color: #101241;
+    border: 1px solid #101241;
+    color: white;
+}
+
