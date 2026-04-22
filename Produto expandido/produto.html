@@ -83,14 +83,16 @@
                         <span id="gg_size" class="medidas"><button>GG</button></span>
                     </div>
                 </div>
-                <div class="guia_medida">
-                    <span class="left">
-                        <!--MUDAR ESSA MERDA-->
-                        <i class="fa-light fa-ruler"></i><p>Guia de medidas</p>
-                    </span> 
-                    <span class="seta_direita"><i class="fa-solid fa-arrow-right"></i></span>
-                </div>
 
+                <div class="guia_medida">
+                    <a href="#">
+                        <span class="left" style="display: flex; gap: 10px; align-items: center;">
+                            <i class="fa-solid fa-ruler" style="color: #616161;"></i><p style="font-weight: 600; color: #616161;">Guia de medidas</p>
+                        </span>
+                        <span class="seta_direita"><i style="color: #464646;" class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                </div>
+                <hr>
                 <div class="container_vagaDisponivel">
                     <span>
                         <i class="fa-solid fa-triangle-exclamation"></i> 
@@ -98,6 +100,12 @@
                     </span>
                     <p>Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Nihil perferendis incidunt itaque.</p>
                 </div>
+
+                <div id="container_preco">
+                    <p style="color: #7c7c7c;">A partir de</p>
+                    <h3 style="font-size: 2.6rem;">R$ 20,00</h3>
+                    <a href="" style="color: #191c80;">ou parcelas de 5x sem juros</a>
+                </div><!--Fim container_preco-->
 
                 <div class="container_bt">
                     <div class="bt_comprar">
@@ -107,19 +115,26 @@
                         <a href="#" class="bt_medio"><button>Adicionar ao Carrinho</button></a>
                     </div>  
                 </div><!--Fim container_bt-->
+
             </div><!--Fim right-side-->
         </div><!--Fim container_produto-->
 
         <div id="container_sobreProduto">
+            <span class="sub"><h3>Detalhes produto</h3></span>
             <div class="hero_nav">
-                <div class="caixa_Descricao">
+                <div class="caixa_descricao">
+                    <span><p>Descrição</p></span>
+                </div>  
 
+                <div class="caixa_cuidados">
+                    <span><p>Cuidados</p></span>
                 </div>
-
-                <div class="caixa_">
-
+                
+                <div class="caixa_devoluções">
+                    <span><p>Devoluções</p></span>
                 </div>
             </div>
+
         </div>
     </main>
 </body>
