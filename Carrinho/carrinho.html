@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/988dc92aba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="carrinho.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="container_hero">
+        <div class="left">
+            <ul class="container_nav">
+                <li><a href="Inicio/catalgo.html">Inicio</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <div class="center_logo">
+            <img src="img/8665705.jpg" alt="">
+        </div>
+        <div class="right">
+            <a class="bt_entrar" href=""><button>Entrar</button></a>
+            <a class="bt_criarConta" href=""><button>Criar conta</button></a>
+        </div>
+    </header>
+
+    <main id="container_main">
+         <div class="container_aviso">
+            <span class="aviso_destaque"><p>3 vagas disponíveis</p></span> <p>Garanta sua reserva agora antes que acabe</p>
+        </div>
+        <div class="container_topo"> <!--Subtitulo, pesquisa, carrinho e favorito-->
+            <div class="titulo_pag">
+                <h2>Catalogo</h2>
+            </div>
+            <div class="search">
+                <input type="search" name="pesquisar" id="idPesquisar" placeholder="Pesquisar"> <span><i class="fa-brands fa-sistrix"></i></span>
+            </div>
+            <div class="right_side">
+                <a href="#" class="carrinho"</a><i class="fa-solid fa-cart-shopping"></i> <span class="etiqueta"><p>Carrinho</p></span></a>
+                <a href="#" class="favorito"><i class="fa-regular fa-heart" style="background-color: #721B1F;"></i><span class="etiqueta"><p style="color: #721B1F;">Favorito</p></span></a>
+            </div>
+        </div>
+
+        <div id="container_detalhes">
+            <div class="produto">
+                <div class="img_produto">
+                    <img src="../img/pack_001/modelos/roupas/sueter feminino.jpg" alt="">
+                </div>
+                <div class="nome_id">
+                    <p>Suéter Feminino</p>
+                    <p>Ref: H006398T </p>
+                </div>
+            </div>
+
+            <div class="info_cor">
+                <label for="iCor">Cor:</label>
+                <span class="img_cores"><img src="../img/icones/Group 29.svg" alt=""></span>
+            </div><!--Fim botao em cascata-->
+
+            <div class="info_tamanho">
+                <label for="iTamanho">Tamanho:</label>
+                <p>P</p>
+            </div>
+
+            <div class="info_quantidade">
+                <label for="iQuantidade"></label>
+                <p>1</p>
+            </div>
+
+            <div class="excluirProduto">
+                <button><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

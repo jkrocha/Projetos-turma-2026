@@ -1,0 +1,228 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/*Configurações gerais*/
+:root{
+    --fonte: "Noto Sans", sans-serif;
+    --corHs: #2C2C2C;
+    --corPar: #333333;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:var(--fonte);
+}
+
+body{
+    max-width: 1600px;
+    background-color: #F2F2F2;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4{
+    color: var(--corHs);
+}
+
+p{
+    color: var(--corPar);
+}
+
+hr{
+    border: none;
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+#container_hero{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid #E5E5E5;
+    margin-top: 20px;
+}
+
+/*Esquerda - Menu*/
+.container_nav{
+    display: flex;
+    gap: 1rem;
+}
+
+.container_nav li{
+    list-style-type: none;
+}
+
+.container_nav li a{
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.container_nav li a:hover{
+    color: #191c80;
+    font-weight: 600;
+}
+
+/*Centro - Logotipo*/
+.center_logo img{
+    width: 40px;
+    border-radius: 99px;
+}
+
+/*Direita - Botões*/
+.right button{
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 110px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.right .bt_entrar button{
+    color: black;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.right .bt_criarConta button{
+    background-color: #101241;
+    border: 1px solid #101241;
+    transition: 0.5s;
+    width: 140px;
+}
+
+.right .bt_criarConta button:hover{
+    border: 1px solid #101241;
+    background-color: transparent;
+    color: #101241;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.right .bt_entrar button:hover{
+    color: #191c80;
+    cursor: pointer;
+}
+
+/*MAIN*/
+/*Aviso de vagas*/
+.container_aviso{
+    background-color: #303030;
+    padding: 10px 0px;
+}
+
+.container_aviso p{
+    color: white;
+    text-align: center;
+}
+
+.container_aviso .aviso_destaque p{
+        font-weight: 600;
+}
+
+.container_topo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.container_topo .search{
+    display: flex;
+    align-items: center;
+}
+
+.container_topo .search i{
+    background-color: #2A2A2A;
+    padding: 14px;
+    color: white;
+}
+
+.container_topo .search input{
+    padding: 12px 14px;
+    border: 1px solid #E5E5E5;
+    width: 320px;
+}
+
+.container_topo .search input::placeholder{
+    font-weight: 500;
+}
+
+.container_topo .search input:focus{
+    outline: none;
+}
+
+.container_topo .right_side{
+    display: flex;
+    gap: 1rem;
+}
+
+.container_topo .right_side a{
+    text-decoration: none;
+}
+
+.container_topo .right_side .carrinho, .favorito{
+    display: flex;
+    align-items: center;
+}
+
+.container_topo .right_side .etiqueta{
+    border: 1px solid black;
+}
+
+.container_topo .right_side .carrinho p, .favorito p{
+    padding: 6px;
+    font-weight: 500;
+}
+
+.container_topo .right_side .favorito .etiqueta{
+    border: 1px solid #721B1F;
+}
+
+.container_topo .right_side .carrinho i, .favorito i{
+    background-color: #333333;
+    padding: 10px;
+    color: white;
+}
+
+#container_detalhes{ 
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: lightgray;
+    align-items: center;
+}
+
+#container_detalhes .produto{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+#container_detalhes .img_produto{
+    width: 60px;
+    height: 60px;
+}
+
+#container_detalhes .img_produto img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#container_detalhes .nome_id{
+    display: flex;
+    gap: 1rem;
+}
+
+#container_detalhes .cor_produto .img_cores{
+    width: 30px;
+    height: 30px;
+}
+
+#container_detalhes .cor_produto .left .img_cores img{
+    object-fit: cover;
+    width: 100%;
+}
