@@ -187,19 +187,26 @@ hr{
 }
 
 #container_detalhes{ 
-    height: 50px;
+    display: flex;
+    margin-top: 80px;
+    gap: 8rem;
+}
+
+#container_detalhes label{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+#container_detalhes .grid_1{
+    width: 980px;
+     height: 50px;
     display: flex;
     justify-content: space-between;
     height: 100px; 
     background-color: rgb(235, 235, 235);
     align-items: center;
     padding: 10px 40px;
-    margin-top: 80px;
-}
-
-#container_detalhes label{
-    font-size: 20px;
-    font-weight: 700;
 }
 
 #container_detalhes .produto{
@@ -222,9 +229,7 @@ hr{
 #container_detalhes .nome_id{
     display: flex;
     flex-direction: column;
-    
 }
-
 
 #container_detalhes .info_cor .img_cores{
     width: 30px;
@@ -253,5 +258,25 @@ hr{
     cursor: pointer;
 }
 
+#container_detalhes .grid_2{
+    border: 1px solid black;
+    padding: 20px;
+    width: 400px;
+    
+}
 
+#container_detalhes .grid_2 .input_frete form{
+    display: flex;
+    flex-direction: column;
+}
 
+#container_detalhes .grid_2 .input_frete form input{
+    width: 200px;
+    padding: 8px 10px;
+    border: 1px solid #E5E5E5;
+
+}
+
+#container_detalhes .grid_2 .input_frete form input:focus{
+    outline: none;
+}
