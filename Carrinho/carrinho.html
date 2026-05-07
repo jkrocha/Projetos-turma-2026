@@ -72,32 +72,36 @@
 
             <div class="grid_2">
                 <div class="sub">
-                    <h3>Resumo da compra</h3>
+                    <h3 style="font-size: 22px;">Resumo da compra</h3>
                 </div>
                 <div class="input_frete">
                     <form action="">
-                        <label for="iFrete">Calcular frete:</label>
+                        <label for="iFrete" style="font-size: 16px; font-style: Noto Sans, sans-serif; margin-bottom: 8px;">Calcular frete:</label>
                         <span style="display: flex; align-items: center;">
                             <input type="text" name="frete" id="iFrete" minlength="8" maxlength="9" placeholder="Ex.: 00000-000">
                             <a href="#"><button style="padding: 8px 8px; border: 1px solid; background-color: #101241; color: white;">Calcular</button></a>
                         </span>
                     </form>
                 </div>
+                <hr>
                 <div class="texts">
                     <span class="subtotal">
-                        <p>Subtotal</p>
+                        <p style="font-weight: 600;">Subtotal</p>
                         <p>R$ 20,00</p>
                     </span>
                     <span class="frete">
-                        <p>Taxa do frete</p>
-                        <p>R$ 17,89</p>
+                        <p style="font-weight: 600;">Taxa do frete</p>
+                        <p >R$ 17,89</p>
                     </span>
-                    <span class="total">
-                        <strong><p>Total</p></strong>
-                        <p>R$ 37,89</p>
+
+                    <span class="total" style="display: flex; justify-content: space-between; align-items: center; background-color: rgb(238, 238, 238); padding: 8px 20px; margin-top: 10px;">
+                        <strong><p style="font-size: 30px;">Total</p></strong>
+                        <p style="font-size: 20px; color: #101241; font-weight: 600;">R$ 37,89</p>
                     </span>
                 </div>
-
+                <div class="bt_comprar">
+                    <a href="../Tela-compra/compra.html" class="bt_grande">Comprar</a>
+                </div>
             </div><!--Fim grid_2-->
 
         </div>
